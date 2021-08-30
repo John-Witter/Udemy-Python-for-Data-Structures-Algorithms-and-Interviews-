@@ -40,7 +40,8 @@
 
 ```python
     counters = [0] * 8 # all cells reference the same object (integers are immutable)
-    
+                       # [0,0,0,0,0,0,0,0]    
     counters[2] += 1 # counters[2] will reference the newly computed value, not the original 0
+                     # [0,0,1,0,0,0,0,0]    
 ```
 
